@@ -10,24 +10,24 @@ public class LocationBuilder : MonoBehaviour
     [SerializeField] private GameObject prefab2;
     [SerializeField] private GameObject prefab3;
 
-    [SerializeField] private GameObject playerPrefab;
-
-    [SerializeField] private GameObject groundPrefab;
-    [SerializeField] private GameObject groundFurniturePrefab;
+   // [SerializeField] private GameObject playerPrefab;
+   //
+   // [SerializeField] private GameObject groundPrefab;
+   // [SerializeField] private GameObject groundFurniturePrefab;
     void Start()
     {
-        Instantiate(playerPrefab,new Vector3 (0, 10, 0), Quaternion.identity);
-
-        GameObject furniturePrefab = Instantiate(groundFurniturePrefab, new Vector3(0,0,0) , Quaternion.identity);
-        furniturePrefab.AddComponent<BoxCollider>();
-        furniturePrefab.AddComponent<CollisionOn>();
-        furniturePrefab.AddComponent<DestroyGround>();
-
-        GameObject groundInstance = Instantiate(groundPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        groundInstance.transform.eulerAngles = new Vector3(0, 0, 0);
-        groundInstance.AddComponent<BoxCollider>();
-        groundInstance.AddComponent<CollisionOn>();
-        groundInstance.AddComponent<DestroyGround>();
+      //  Instantiate(playerPrefab,new Vector3 (0, 10, 0), Quaternion.identity);
+      //
+      //  GameObject furniturePrefab = Instantiate(groundFurniturePrefab, new Vector3(0,0,0) , Quaternion.identity);
+      //  furniturePrefab.AddComponent<BoxCollider>();
+      //  furniturePrefab.AddComponent<CollisionOn>();
+      //  furniturePrefab.AddComponent<DestroyGround>();
+      //
+      //  GameObject groundInstance = Instantiate(groundPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+      //  groundInstance.transform.eulerAngles = new Vector3(0, 0, 0);
+      //  groundInstance.AddComponent<BoxCollider>();
+      //  groundInstance.AddComponent<CollisionOn>();
+      //  groundInstance.AddComponent<DestroyGround>();
 
         for (var i = 0; i < 10; i++)
         {
